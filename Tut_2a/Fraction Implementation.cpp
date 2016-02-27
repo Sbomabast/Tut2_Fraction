@@ -71,5 +71,5 @@ void Fraction::divide(int a, int b, int c, int d)
 
 void Fraction::print()
 {
-	cout << "The resulting fraction after execution is:\n" << this.num << / << this.denom << endl;
+	cout << "The resulting fraction after execution is:\n" << this.num << "/" << this.denom << endl;
 }
