@@ -27,7 +27,7 @@ void Fraction::setDenom(int Denom)
 	this.denom = Denom;
 }
 
-void Fraction :: add(int &a, int &b, int &c, int &d)
+void Fraction :: add(int a, int b, int c, int d)
 {
 	if (b = d)
 	{
@@ -42,7 +42,7 @@ void Fraction :: add(int &a, int &b, int &c, int &d)
 
 }
 
-void Fraction::subtract(int &a, int &b, int &c, int &d)
+void Fraction::subtract(int a, int b, int c, int d)
 {
 	if (b = d)
 	{
@@ -57,19 +57,19 @@ void Fraction::subtract(int &a, int &b, int &c, int &d)
 
 }
 
-void Fraction::multiply(int &a, int &b, int &c, int &d)
+void Fraction::multiply(int a, int b, int c, int d)
 {
 	this.num = a * c;
 	this.denom b * d;
 }
 
-void Fraction::divide(int &a, int &b, int &c, int &d)
+void Fraction::divide(int a, int b, int c, int d)
 {
 	this.num = a * d;
 	this.denom = b * c;
 }
 
-void Fraction::print(int &a, int &b)
+void Fraction::print()
 {
 	cout << "The resulting fraction after execution is:\n" << this.num << / << this.denom << endl;
 }
