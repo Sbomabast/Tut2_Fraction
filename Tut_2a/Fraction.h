@@ -6,6 +6,7 @@ private:
 	int denom;
 public:
 	Fraction(); // costructor
+	Fraction(); // destructor
 	int getNum(); // accesor for numerator
 	int getDenom(); // accesor for denominator
 	void setNum(int); // mutator for numerator
