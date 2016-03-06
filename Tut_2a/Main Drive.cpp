@@ -4,22 +4,20 @@ using namespace std;
 
 int main()
 {
-	int a;
-	int b;
-	int c;
-	int d;
-	cout << "Please enter the numerators and denominators of the two fractions to be manipulated\n" << endl;
-	cin >> a;
-	cin >> b;
-	cin >> c;
-	cin >> d;
+	int numerator;
+	int denominator;
 	Fraction Frac_1;
 	Fraction Frac_2;
 	Fraction ResultingFrac;
-	ResultingFrac.add(Frac_1.a, Frac_1.b, Frac_2.c, Frac_2.d);
-	ResultingFrac.subtract(Frac_1.a, Frac_1.b, Frac_2.c, Frac_2.d);
-	ResultingFrac.mutliply(Frac_1.a, Frac_1.b, Frac_2.c, Frac_2.d);
-	ResultingFrac.divide(Frac_1.a, Frac_1.b, Frac_2.c, Frac_2.d);
+	cout << "Please enter the fractions you need to manipulate\n" << endl;
+	cin >> Frac_1.setNum(numerator)
+	cin >> Frac_1.setDenom(denominator);
+	cin >> Frac_2.setNum(numerator);
+	cin >> Frac_2.setDenom(denominator);
+	ResultingFrac.add(Frac_1.getNum(), Frac_1.getDenom(), Frac_2.getNum(), Frac_2.getDenom());
+	ResultingFrac.subtract(Frac_1.getNum(), Frac_1.getDenom(), Frac_2.getNum(), Frac_2.getDenom());
+	ResultingFrac.mutliply(Frac_1.getNum(), Frac_1.getDenom(), Frac_2.getNum(), Frac_2.getDenom());
+	ResultingFrac.divide(Frac_1.getNum(), Frac_1.getDenom(), Frac_2.getNum(), Frac_2.getDenom());
 	ResultingFrac.print();
 	return 0;
 }
