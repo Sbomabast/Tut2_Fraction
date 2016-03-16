@@ -5,39 +5,31 @@ using namespace std;
 Fraction::Fraction()
 {
 
-};
+}
 
-Fraction::Fraction
+Fraction::~Fraction
 {
 	
-};
+}
 
-int Fraction::getNum()
+void Fraction::getNumDenom(int &numerator, int &denominator)
 {
-	return this.num;
-};
+	numerator = num;
+	denominator = denom;
+}
 
-int Fraction::getDenom()
+void Fraction::setNumDenom(int Num, int Denom)
 {
-	return this.denom;
-};
+	num = Num;
+	denom = Denom;
+}
 
-void Fraction::setNum(int Num)
-{
-	this.num = Num;
-};
 
-void Fraction::setDenom(int Denom)
+void Fraction :: add(Fraction Frac_2)
 {
-	this.denom = Denom;
-};
-
-void Fraction :: add(int a, int b, int c, int d)
-{
-	if (b = d)
+	if (denom = Frac_2.denom)
 	{
-		this.num = a + c;
-		this.denom = b;
+	
 	}
 	else
 	{
